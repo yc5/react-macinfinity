@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="theme-color" content="#ffbf3b">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto px-5">
+        <img class="w-8 absolute top-3" src="./assetss/ic_arrow_back_black_24dp.png" alt="">
+        <h1 class="text-xl text-center py-3">我的優惠券</h1>
+        <div class="bg-white rounded-lg shadow-lg h-[36rem] overflow-x-auto">
+            <div id="item_title" class="border-b-2 py-8 flex flex-row">
+                <div class="basis-1/3 flex justify-center">
+                    <img class="w-28"
+                        src="https://s7d1.scene7.com/is/image/mcdonalds/big-mac_832x822_2:product-header-desktop?wid=829&hei=455&dpr=off"
+                        alt="">
+
+                </div>
+                <div class="basis-2/3 text-xl flex items-center">
+                    <span class="font-bold">單點大麥克買一送一</span>
+                </div>
+            </div>
+            <div id="valid_period" class="py-4 border-b-2 flex flex-row">
+                <div class="basis-1/3 flex items-center justify-center">
+                    <img class="w-6" src="./assetss/ic_clock_v.png" alt="">
+                    <span>適用時間</span>
+                </div>
+                <div class="basis-2/3 flex items-center justify-end">
+                    <span class="pr-4">上午10:30至凌晨1:00</span>
+                </div>
+            </div>
+            <div id="expiry_date" class="py-4 border-b-2 flex flex-row">
+                <div class="basis-1/3 flex justify-center">
+                    <img class="w-6" src="./assetss/ic_clock_yellow.png" alt="">
+                    <span>使用期限</span>
+                </div>
+                <div class="basis-2/3 flex items-center justify-end">
+                    <span class="pr-4 text-red-500">2022.06.30 23:59到期</span>
+                </div>
+            </div>
+            <div id="redeem_section" class="px-4 py-6 flex flex-col items-center">
+                <p class="pb-4 text-center">點選「確定兌換」後需要在2分鐘內出示給櫃檯人員</p>
+                <div id="like_button_container"></div>
+                <h4 class="w-full pb-2 font-bold">注意事項</h4>
+                <ol>
+                    <li>1. 本券適用於上午10:30至凌晨1:00，部份餐廳恕未供應。</li>
+                    <li>2. 本優惠券僅適用於本券所記載條件及品項，不得與其他優惠併用。</li>
+                    <li>3. 圖片僅供參考，供應時間及口味以各麥當勞餐廳實際供應為準，數量有限,售(送)完為止。</li>
+                    <li>4. 詳見當官網。</li>
+                    <li>1. 本券適用於上午10:30至凌晨1:00，部份餐廳恕未供應。</li>
+                    <li>2. 本優惠券僅適用於本券所記載條件及品項，不得與其他優惠併用。</li>
+                    <li>3. 圖片僅供參考，供應時間及口味以各麥當勞餐廳實際供應為準，數量有限,售(送)完為止。</li>
+                    <li>4. 詳見當官網。</li>
+                </ol>
+            </div>
+        </div>
+        <div class="flex justify-end z-[9999]">
+            <img class="w-1/3" src="./assetss/ic_fill2.png" alt="">
+        </div>
+    </div>
+    <!-- ... 其他 HTML ... -->
+
+    <!-- 載入 React。 -->
+    <!-- 注意：在發佈應用程式前，請把「development.js」替換成「production.min.js」。 -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- 載入我們的 React component。-->
+    <script type="text/babel" src="like_button.js"></script>
+</body>
+
+</html>

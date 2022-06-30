@@ -1,0 +1,14 @@
+{
+  "coupons": {
+    "1": {
+      "name": "單點大麥克買一送一",
+      "valid_period": "上午10:30至凌晨1:00",
+      "pic": "https://s7d1.scene7.com/is/image/mcdonalds/big-mac_832x822_2:product-header-desktop?wid=829&hei=455&dpr=off"
+    },
+    "2": {
+      "name": "買$45大杯冷飲送麥香魚",
+      "valid_period": "上午10:30至凌晨4:00",
+      "pic": "https://s7d1.scene7.com/is/image/mcdonalds/filet-o-fish_832x822:product-header-desktop?wid=829&hei=455&dpr=off"
+    }
+  }
+}
