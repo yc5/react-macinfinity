@@ -1,5 +1,20 @@
 const CACHE_NAME = "mac_inifinity_1.0.0";
 
+self.addEventListener("fetch", function (event) {
+  event.respondWith(
+    (async function () {
+      try {
+        var res = await fetch(event.request);
+        var cache = await caches.open("cache");
+        cache.put(event.request.url, res.clone());
+        return res;
+      } catch (error) {
+        return caches.match(event.request);
+      }
+    })()
+  );
+});
+
 const URLS = [
   // Add URL you want to cache in this list.
   // '/',                     // If you have separate JS/CSS files, add path to those files here
