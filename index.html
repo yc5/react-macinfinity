@@ -14,7 +14,7 @@
 
 <body>
     <div class="container mx-auto px-5">
-        <img class="w-8 absolute top-3" src="./assetss/ic_arrow_back_black_24dp.png" alt="">
+        <img class="w-8 absolute top-3" src="./assets/ic_arrow_back_black_24dp.png" alt="">
         <h1 class="text-xl text-center py-3">我的優惠券</h1>
         <div class="bg-white rounded-lg shadow-lg h-[36rem] overflow-x-auto">
             <div id="item_title" class="border-b-2 py-8 flex flex-row">
@@ -30,7 +30,7 @@
             </div>
             <div id="valid_period" class="py-4 border-b-2 flex flex-row">
                 <div class="basis-1/3 flex items-center justify-center">
-                    <img class="w-6" src="./assetss/ic_clock_v.png" alt="">
+                    <img class="w-6" src="./assets/ic_clock_v.png" alt="">
                     <span>適用時間</span>
                 </div>
                 <div class="basis-2/3 flex items-center justify-end">
@@ -39,7 +39,7 @@
             </div>
             <div id="expiry_date" class="py-4 border-b-2 flex flex-row">
                 <div class="basis-1/3 flex justify-center">
-                    <img class="w-6" src="./assetss/ic_clock_yellow.png" alt="">
+                    <img class="w-6" src="./assets/ic_clock_yellow.png" alt="">
                     <span>使用期限</span>
                 </div>
                 <div class="basis-2/3 flex items-center justify-end">
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="flex justify-end">
-            <img class="w-1/3" src="./assetss/ic_fill2.png" alt="">
+            <img class="w-1/3" src="./assets/ic_fill2.png" alt="">
         </div>
     </div>
     <!-- ... 其他 HTML ... -->
@@ -75,6 +75,13 @@
 
     <!-- 載入我們的 React component。-->
     <script type="text/babel" src="redeem_button.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('/service-worker.js', {
+                scope: '/'
+            })
+        }
+    </script>
 </body>
 
 </html>

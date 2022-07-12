@@ -5,8 +5,7 @@ class RedeemButton extends React.Component {
     super(props);
     this.state = {
       startCount: false,
-      // countdown: 119,
-      countdown: 3,
+      countdown: 119,
       btnText: "開始兌換",
       timeFormated: "1:59",
     };
@@ -71,7 +70,7 @@ class RedeemButton extends React.Component {
           <p>
             <img
               className="inline w-6 mr-2 align-middle"
-              src="./assetss/ic_icpaymentbtn.png"
+              src="./assets/ic_icpaymentbtn.png"
             ></img>
             <span className="">使用點點卡付款</span>
           </p>
